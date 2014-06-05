@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{62CB4821-747D-43F7-A983-7C06AE40CFD3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ERPMercuryDatabaseDirectory</RootNamespace>
+    <AssemblyName>ERPMercuryDatabaseDirectory</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>P:\IT отдел\UniXP\Dll\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>P:\IT отдел\UniXP\Dll\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v7.2, Version=7.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v7.2, Version=7.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v7.2, Version=7.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v7.2, Version=7.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v7.2, Version=7.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v7.2, Version=7.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v7.2, Version=7.2.4.0, Culture=neutral, PublicKeyToken=9b171c9fd64da1d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ERP_Mercury.Common">
+      <HintPath>P:\IT отдел\UniXP\Options Dll\ERP_Mercury.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UniXP.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=7483d705c8cfb03e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>P:\IT отдел\UniXP\UniXP.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CCalcOrder.cs" />
+    <Compile Include="CDatabaseDirectoryModuleInfo.cs" />
+    <Compile Include="ctrlCalcOrderItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrlCalcOrderItem.designer.cs">
+      <DependentUpon>ctrlCalcOrderItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatabaseDirectory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatabaseDirectory.Designer.cs">
+      <DependentUpon>frmDatabaseDirectory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalcOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalcOrder.designer.cs">
+      <DependentUpon>frmCalcOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductDetail.Designer.cs">
+      <DependentUpon>frmProductDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductOwnerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductOwnerList.Designer.cs">
+      <DependentUpon>frmProductOwnerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ctrlCalcOrderItem.resx">
+      <DependentUpon>ctrlCalcOrderItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatabaseDirectory.resx">
+      <DependentUpon>frmDatabaseDirectory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalcOrder.resx">
+      <DependentUpon>frmCalcOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductDetail.resx">
+      <DependentUpon>frmProductDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductOwnerList.resx">
+      <DependentUpon>frmProductOwnerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMAGES_SPPARAMS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMAGES_SPPARAMSSMALL.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMAGES_SPPARAMSSMALL_PNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disk_blue_ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\office-building.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\office-building.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\office-building_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMAGES_CONTACTS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMAGES_CONTACTSSMALL.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMAGES_CONTACTSSMALL_PNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMAGES_MONEY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMAGES_CURRENCYRATESMALL.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMAGES_CURRENCYRATESMALL_PNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMAGES_CUSTOMERTYPE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMAGES_CUSTOMERTYPESMALL.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMAGES_CUSTOMERTYPESMALL_PNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMAGES_GROUP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMAGES_GROUPSMALL.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMAGES_GROUPSMALL_PNG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_down_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_left_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_right_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_up_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate_left2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\navigate_right2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_time_png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMAGES_PLANORDER.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMAGES_LOTORDER_SMALL.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_time.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_certificate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_info_small_png.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
