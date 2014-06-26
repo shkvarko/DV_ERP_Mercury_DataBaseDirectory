@@ -807,7 +807,7 @@ namespace ERPMercuryDatabaseDirectory
             objClassInfo = new UniXP.Common.CLASSINFO();
             objClassInfo.enClassType = UniXP.Common.EnumClassType.mcView;
             objClassInfo.strClassName = "ERPMercuryDatabaseDirectory.EditWaybillShipMode";
-            objClassInfo.strName = "Виды отгрузки";
+            objClassInfo.strName = "Накладная (Виды отгрузки)";
             objClassInfo.strDescription = "Справочник вариантов проведения документа \"Накладная\"";
             objClassInfo.lID = 82;
             objClassInfo.nImage = 0;
@@ -817,7 +817,7 @@ namespace ERPMercuryDatabaseDirectory
             objClassInfo = new UniXP.Common.CLASSINFO();
             objClassInfo.enClassType = UniXP.Common.EnumClassType.mcView;
             objClassInfo.strClassName = "ERPMercuryDatabaseDirectory.EditBackWaybillState";
-            objClassInfo.strName = "Состояния накладной на возврат товара";
+            objClassInfo.strName = "Возврат товара (Состояния)";
             objClassInfo.strDescription = "Справочник возможных состояний документа \"Накладная на возврат товара\"";
             objClassInfo.lID = 83;
             objClassInfo.nImage = 0;
@@ -830,6 +830,46 @@ namespace ERPMercuryDatabaseDirectory
             objClassInfo.strName = "Причины возврата товара";
             objClassInfo.strDescription = "Справочник возможных причин возврата товара";
             objClassInfo.lID = 84;
+            objClassInfo.nImage = 0;
+            objClassInfo.strResourceName = "document_small";
+            m_arClassInfo.Add(objClassInfo);
+
+            objClassInfo = new UniXP.Common.CLASSINFO();
+            objClassInfo.enClassType = UniXP.Common.EnumClassType.mcView;
+            objClassInfo.strClassName = "ERPMercuryDatabaseDirectory.EditIntWaybillShipMode";
+            objClassInfo.strName = "Внутренняя накладная (Виды отгрузки)";
+            objClassInfo.strDescription = "Справочник вариантов проведения документа \"Накладная на внутреннее перемещение\"";
+            objClassInfo.lID = 85;
+            objClassInfo.nImage = 0;
+            objClassInfo.strResourceName = "document_small";
+            m_arClassInfo.Add(objClassInfo);
+
+            objClassInfo = new UniXP.Common.CLASSINFO();
+            objClassInfo.enClassType = UniXP.Common.EnumClassType.mcView;
+            objClassInfo.strClassName = "ERPMercuryDatabaseDirectory.EditIntWaybillState";
+            objClassInfo.strName = "Внутренняя накладная (Состояния)";
+            objClassInfo.strDescription = "Справочник возможных состояний документа \"Накладная на внутреннее перемещение\"";
+            objClassInfo.lID = 86;
+            objClassInfo.nImage = 0;
+            objClassInfo.strResourceName = "document_small";
+            m_arClassInfo.Add(objClassInfo);
+
+            objClassInfo = new UniXP.Common.CLASSINFO();
+            objClassInfo.enClassType = UniXP.Common.EnumClassType.mcView;
+            objClassInfo.strClassName = "ERPMercuryDatabaseDirectory.EditIntOrderShipMode";
+            objClassInfo.strName = "Внтуренний заказ (Виды отгрузки)";
+            objClassInfo.strDescription = "Справочник вариантов проведения документа \"Заказ на внутреннее перемещение\"";
+            objClassInfo.lID = 87;
+            objClassInfo.nImage = 0;
+            objClassInfo.strResourceName = "document_small";
+            m_arClassInfo.Add(objClassInfo);
+
+            objClassInfo = new UniXP.Common.CLASSINFO();
+            objClassInfo.enClassType = UniXP.Common.EnumClassType.mcView;
+            objClassInfo.strClassName = "ERPMercuryDatabaseDirectory.EditIntOrderState";
+            objClassInfo.strName = "Внутренний заказ (Состояния)";
+            objClassInfo.strDescription = "Справочник возможных состояний документа \"Заказ на внутреннее перемещение\"";
+            objClassInfo.lID = 88;
             objClassInfo.nImage = 0;
             objClassInfo.strResourceName = "document_small";
             m_arClassInfo.Add(objClassInfo);

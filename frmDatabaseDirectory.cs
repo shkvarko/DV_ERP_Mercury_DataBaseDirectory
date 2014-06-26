@@ -1114,4 +1114,44 @@ namespace ERPMercuryDatabaseDirectory
     }
     #endregion
 
+    #region Виды отгрузки накладной на внутреннее перемещение
+    public class EditIntWaybillShipMode : PlugIn.IClassTypeView
+    {
+        public override void Run(UniXP.Common.MENUITEM objMenuItem, System.String strCaption)
+        {
+            frmDatabaseDirectory obj = new frmDatabaseDirectory(objMenuItem.objProfile, ERP_Mercury.Common.EnumDirectSimple.IntWaybillShipMode, objMenuItem) { Text = strCaption, MdiParent = objMenuItem.objProfile.m_objMDIManager.MdiParent, Visible = true };
+        }
+    }
+    #endregion
+
+    #region Состояния накладной на внутреннее перемещение
+    public class EditIntWaybillState : PlugIn.IClassTypeView
+    {
+        public override void Run(UniXP.Common.MENUITEM objMenuItem, System.String strCaption)
+        {
+            frmDatabaseDirectory obj = new frmDatabaseDirectory(objMenuItem.objProfile, ERP_Mercury.Common.EnumDirectSimple.IntWaybillState, objMenuItem) { Text = strCaption, MdiParent = objMenuItem.objProfile.m_objMDIManager.MdiParent, Visible = true };
+        }
+    }
+    #endregion
+
+    #region Виды отгрузки заказа на внутреннее перемещение
+    public class EditIntOrderShipMode : PlugIn.IClassTypeView
+    {
+        public override void Run(UniXP.Common.MENUITEM objMenuItem, System.String strCaption)
+        {
+            frmDatabaseDirectory obj = new frmDatabaseDirectory(objMenuItem.objProfile, ERP_Mercury.Common.EnumDirectSimple.IntOrderShipMode, objMenuItem) { Text = strCaption, MdiParent = objMenuItem.objProfile.m_objMDIManager.MdiParent, Visible = true };
+        }
+    }
+    #endregion
+
+    #region Состояния заказа на внутреннее перемещение
+    public class EditIntOrderState : PlugIn.IClassTypeView
+    {
+        public override void Run(UniXP.Common.MENUITEM objMenuItem, System.String strCaption)
+        {
+            frmDatabaseDirectory obj = new frmDatabaseDirectory(objMenuItem.objProfile, ERP_Mercury.Common.EnumDirectSimple.IntOrderState, objMenuItem) { Text = strCaption, MdiParent = objMenuItem.objProfile.m_objMDIManager.MdiParent, Visible = true };
+        }
+    }
+    #endregion
+
 }
